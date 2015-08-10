@@ -30,7 +30,7 @@ vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.msm8226.so:lib/hw/camera.vendor.msm8226.so
+lib/hw/camera.msm8226.so
 lib/libarcsoft_flawlessface.so
 lib/libarcsoft_night_shot.so
 lib/libarcsoft_panorama_burstcapture.so
@@ -81,6 +81,10 @@ lib/B08QT_libTsAe.so
 lib/B08QT_libTsAf.so
 lib/B08QT_libTs_J_Accm.so
 lib/B08QT_libTs_J_Awb.so
+lib/E08QL_libTsAe.so
+lib/E08QL_libTsAf.so
+lib/E08QL_libTs_J_Accm.so
+lib/E08QL_libTs_J_Awb.so
 lib/libAfSingle.so
 lib/libchromatix_s5k6a3yx_smart_stay.so
 lib/libchromatix_s5k6a3yx_vt.so
@@ -132,7 +136,7 @@ cameradata/datapattern_front_420sp.yuv
 # DRM
 bin/qseecomd
 framework/com.google.widevine.software.drm.jar
-vendor/libdrmdecrypt.so
+lib/libdrmdecrypt.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libdrmdiag.so
@@ -146,7 +150,6 @@ vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
 # GPS
--app/com.qualcomm.location/com.qualcomm.location.apk
 etc/permissions/com.qualcomm.location.xml
 lib/hw/flp.default.so
 lib/libloc_api_v02.so
@@ -198,7 +201,6 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libSHIMDivxDrm.so
--vendor/lib/libHevcSwDecoder.so
 
 # Perf
 bin/mpdecision
@@ -233,7 +235,9 @@ lib/libfactoryutil.so
 lib/libomission_avoidance.so
 lib/libreference-ril.so
 lib/libril.so
+lib/libsec-ril.so
 lib/libsecnativefeature.so
+lib/libsecril-client.so
 vendor/lib/libconfigdb.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so
@@ -248,7 +252,76 @@ vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # Time services
--app/TimeService/TimeService.apk
 bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
+
+#Matissewifi Camera
+vendor/lib/C08QT_libchromatix_imx175_common.so
+vendor/lib/C08QT_libchromatix_imx175_common_res0.so
+vendor/lib/C08QT_libchromatix_imx175_common_res1.so
+vendor/lib/C08QT_libchromatix_imx175_default_video.so
+vendor/lib/C08QT_libchromatix_imx175_liveshot.so
+vendor/lib/C08QT_libchromatix_imx175_preview.so
+vendor/lib/C08QT_libchromatix_imx175_snapshot.so
+vendor/lib/C08QT_libchromatix_imx175_video_hd.so
+vendor/lib/C08QT_libchromatix_imx175_zsl.so
+vendor/lib/C08QT_libchromatix_imx175_zslshot.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_common.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_common_res0.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_common_res1.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_default_video.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_liveshot.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_panorama.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_preview.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_snapshot.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_video_hd.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_zsl.so
+vendor/lib/E08QL_libchromatix_s5k4h5yb_zslshot.so
+vendor/lib/libchromatix_imx219_common.so
+vendor/lib/libchromatix_imx219_common_res0.so
+vendor/lib/libchromatix_imx219_default_video.so
+vendor/lib/libchromatix_imx219_liveshot.so
+vendor/lib/libchromatix_imx219_preview.so
+vendor/lib/libchromatix_imx219_snapshot.so
+vendor/lib/libchromatix_imx219_zslshot.so
+vendor/lib/libchromatix_s5k8b1yx_common.so
+vendor/lib/libchromatix_s5k8b1yx_pip.so
+vendor/lib/libchromatix_s5k8b1yx_preview.so
+vendor/lib/libchromatix_s5k8b1yx_smart_stay.so
+vendor/lib/libchromatix_s5k8b1yx_snapshot.so
+vendor/lib/libchromatix_s5k8b1yx_video.so
+vendor/lib/libchromatix_s5k8b1yx_vt.so
+vendor/lib/libchromatix_s5k8b1yx_vt_hd.so
+vendor/lib/libchromatix_s5k8b1yx_zslshot.so
+vendor/lib/libmmQSM.so
+vendor/lib/libmmQTA.so
+vendor/lib/libmm-abl.so
+vendor/lib/libmm-abl-oem.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/libmmcamera_imx135.so
+vendor/lib/libmmcamera_imx219.so
+vendor/lib/libmmcamera_s5k3h5xa.so
+vendor/lib/libmmcamera_s5k4ecgx.so
+vendor/lib/libmmcamera_s5k4h5ya.so
+vendor/lib/libmmcamera_s5k4h5yb.so
+vendor/lib/libmmcamera_s5k6a3yx.so
+vendor/lib/libmmcamera_sr030pc50.so
+vendor/lib/libmmcamera_sr130pc20.so
+vendor/lib/libmmcamera_sr200pc20.so
+vendor/lib/libmmcamera_sr352.so
+vendor/lib/libmmhttpstack.so
+vendor/lib/libmmiipstreammmihttp.so
+vendor/lib/libmmipstreamaal.so
+vendor/lib/libmmipstreamnetwork.so
+vendor/lib/libmmipstreamsourcehttp.so
+vendor/lib/libmmipstreamutils.so
+vendor/lib/libmmrtpdecoder.so
+vendor/lib/libmmrtpencoder.so
+vendor/lib/libmmwfdinterface.so
+vendor/lib/libmmwfdsinkinterface.so
+vendor/lib/libmmwfdsrcinterface.so
+
+su.d/permissive.sh
+bin/sshfs
+
