@@ -43,6 +43,18 @@ PRODUCT_PACKAGES += \
 	sshd \
 	ssh-keygen
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.crda.sh \
+    init.qcom.bt.sh
+
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.target.rc \
+    ueventd.qcom.rc
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
